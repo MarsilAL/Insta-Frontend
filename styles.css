@@ -134,3 +134,76 @@ body{
   input[type="submit"]:hover {
     opacity: 0.8;
   }
+
+  .search{
+
+  }
+  .search__bar{
+
+  }
+
+  .search__button{
+
+  }
+
+  .post {
+    height: 135px;
+    width: 600px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    padding: 50;
+    float: center;
+    margin-bottom: 10px;
+
+  }
+
+.post__img {
+  width: 25%;
+  display: block;
+  border-radius: 50%;
+  box-shadow: inset 0 2px rgb(0, 0, 0, 0.35);
+}
+
+.post__text {
+  font-weight: normal;
+  text-align: right;
+  font-size: 0.9rem;
+  padding: 5px 0;
+}
+
+.post__likes {
+  font-weight: normal;
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 5px 0;
+}
+.post__coms {
+  font-weight: normal;
+  text-align: right;
+  font-size: 0.9rem;
+  padding: 5px 0;
+}
+
+.profile {
+  height: 100px;
+  width: 90px;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  padding: 50;
+  float: left;
+  margin-bottom: 9px;
+}
+
+.profile__img {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+  box-shadow: inset 0 2px rgb(0, 0, 0, 0.35);
+}
+
+.profile__user {
+  font-weight: bold;
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 5px 0;
+}
