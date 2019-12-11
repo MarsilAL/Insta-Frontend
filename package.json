@@ -1,0 +1,21 @@
+{
+  "name": "insta-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarsilAL/Insta-Frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarsilAL/Insta-Frontend/issues"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
