@@ -1,4 +1,4 @@
-class Post {
+export default class InstagramPost {
     constructor() {
         this.img = "";
         this.user = "";
@@ -6,11 +6,9 @@ class Post {
         this.hashtags = [];
     }
     hastag(tag) {
-        for (i = 0; i < this.hashtags.length; i++) {
+        for (var i = 0; i < this.hashtags.length; i++) {
             if (this.hashtags[i] == tag) return true;
         }
         return false;
     }
 }
-
-export default Post;
