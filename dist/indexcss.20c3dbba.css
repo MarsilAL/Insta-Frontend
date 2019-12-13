@@ -1,0 +1,27 @@
+body {
+    counter-reset: section;
+  }
+  
+  h2::before {
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+  }
+  
+  .searchid {
+    /* Old Chrome, Safari and Opera */
+    -webkit-column-count: 3;
+    -webkit-column-gap: 40px;  
+    -webkit-column-rule-style: solid;
+  
+    /* Old Firefox */  
+    -moz-column-count: 3;
+    -moz-column-gap: 40px;
+    -moz-column-rule-style: solid;
+    
+    /* Standard syntax */
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid;
+  }
+
+/*# sourceMappingURL=/indexcss.20c3dbba.css.map */

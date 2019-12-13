@@ -12,19 +12,14 @@
 
 <body>
 
-    <center><img src="searchw.png" width="100" height="100"></center>
-    <center>
+    <img src="searchw.png" width="100" height="100">
+    
         <h1>
             <p><strong><span style="color: #0000ff;">Sear</span><span style="color: #ff0000;">Ista</span></strong></p>
         </h1>
         <p>search images in Istagram</p>
-    </center>
-    <div id="wrap1">
-        <form action="http://www.instagram.com" autocomplete="on">
-            <input id="search1" name="search1" type="text1" placeholder="Search Now"><input id="search_submit"
-                value="Rechercher" type="submit">
-        </form>
-    </div>
+   
+
 
     <div class="searista">
         <div class="search">
@@ -35,18 +30,25 @@
         </div>
     </div>
 
-    <div class="post">
-        <img class="post__img" src="postimg.png" alt="The Post Image">
-        <div class="post__text">the description</div>
-        <div class="post__likes">LIKES</div>
-        <div class="post__coms">Comments</div>
-        <div class="profile">
-            <img class="profile__img" src="profileimg.jpg" alt="The Post Image">
-            <div class="profile__user">
-                <h4><b>Name Name</b></h4>
-            </div>
-        </div>
+    <div class="posts">
+        <table border="0">
+            <tr>
+        <article class="post">
+               <td> <div class="profile">
+                        <img class="profile__img" src="profileimg.jpg" alt="The Post Image">
+                        <div class="profile__user">
+                            <h4><b>Name Name</b></h4>
+                        </div>
+                    </div> </td>
+                </tr>
+            <right><img class="post__img" src="postimg.png" alt="The Post Image"></right>
+            <div class="post__text">the description</div>
+            <div class="post__likes">LIKES</div>
+            <div class="post__coms">Comments</div>
+        </tr>
+        </article>
 
+    </table>
     </div>
 
 </body>
