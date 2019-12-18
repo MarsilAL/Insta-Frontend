@@ -10,5 +10,6 @@ export default class InstagramPost {
             if (this.hashtags[i] == tag) return true;
         }
         return false;
+        
     }
 }

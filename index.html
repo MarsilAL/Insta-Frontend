@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="refresh" content="860" >
@@ -8,18 +9,15 @@
   <p><div class="searchid" id="searchid">
       <div class="searista">
           <div class="search">
-              <input type="text" class="tag" placeholder="Search" id="newTag">
-              <button type="submit" class="searchButton" id="searchButton">
-                  <i class="fa fa-search"></i>
-              </button>
+              <input type="text" class="tag" placeholder="Search" id="newTag" onsearch="myFunction()">
+              <button type="submit" class="searchButton" id="searchButton">GO</button>
           </div>
       </div>
   </div></p>
 
-  <div class="postslist" id="postslist">
-      
-  </div>
 
+  <section class="postslist" id="postslist"></section>
+  
 
   <script src="./index.js"></script>
 </body>

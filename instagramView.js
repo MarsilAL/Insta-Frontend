@@ -12,23 +12,45 @@ class InstagramView {
         for (var i = 0; i < this.model.filterposts.length; i++) {
             var post = this.model.filterposts[i];
 
-            var newShowpost = document.createElement("div");
-
+            var newShowpost = document.createElement("figure");
+            newShowpost.className = 'newShowpost';
+            var user = document.createTextNode(post.user);
+            user.className = 'userName';
+            var newPostUser = document.createElement("p");
+            newPostUser.className ='newPostUser';
+            var textHash = document.createTextNode("This is the results for The Hashtag :")
             var hashtags = document.createTextNode(post.hashtags);
-            newShowpost.appendChild(hashtags);
-
-            container.appendChild(newShowpost);
-
+            hashtags.className = 'hashtags';
             var newPostImg = document.createElement("img");
             var postImgUrl = post.img
+
+            newShowpost.appendChild(newPostUser);
+            container.appendChild(newShowpost);
+            newShowpost.appendChild(newPostImg);
+            newShowpost.appendChild(textHash);
+
+
+
+
             newPostImg.setAttribute("src", postImgUrl);
+            
+            
 
             newShowpost.appendChild(newPostImg);
 
-            container.appendChild(newPostImg);
+            
+            document.getElementById("postslist").appendChild(user);
+            document.getElementById("postslist").appendChild(newShowpost);
+            document.getElementById("postslist").appendChild(textHash);
+            document.getElementById("postslist").appendChild(hashtags);
+            
+            
 
+            container.appendChild(newShowpost);
+            container.appendChild(newPostUser);
+            newShowpost.appendChild(hashtags);
+            newShowpost.appendChild(user);
         }
-
     }
 }
 

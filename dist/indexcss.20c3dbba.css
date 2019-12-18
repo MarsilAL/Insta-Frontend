@@ -1,27 +1,93 @@
-body {
-    counter-reset: section;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.searchid {
+z-index: 0px;
+width: 100%;
+display: flexbox;
+position: center;
+align-items: center;
+align-content: center;
+height: 100px;
+background-color: slategrey;;
+}
+
+.searchButton {
+color: #20bf6b !important;
+text-transform: uppercase;
+background: #ffffff;
+padding: 10px;
+border: 4px solid #20bf6b !important;
+border-radius: 3px;
+display: flex;
+transition: all 0.3s ease 0s;
+margin: 6px;
   }
-  
-  h2::before {
-    counter-increment: section;
-    content: "Section " counter(section) ": ";
-  }
-  
-  .searchid {
-    /* Old Chrome, Safari and Opera */
-    -webkit-column-count: 3;
-    -webkit-column-gap: 40px;  
-    -webkit-column-rule-style: solid;
-  
-    /* Old Firefox */  
-    -moz-column-count: 3;
-    -moz-column-gap: 40px;
-    -moz-column-rule-style: solid;
-    
-    /* Standard syntax */
-    column-count: 3;
-    column-gap: 40px;
-    column-rule-style: solid;
-  }
+  .searchButton:hover {
+    color: #494949 !important;
+border-radius: 50px;
+border-color: #494949 !important;
+transition: all 0.3s ease 0s;
+    }
+
+.tag{
+  width: 25%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.tag:focus{
+  color: #00B4CC;
+}
+
+.postslist {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: center;
+  background-color: cornsilk;
+}
+.newShowpost{
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: center;
+  padding: 10px;
+  border: 3px solid #ddd;
+  border-color: #494949;
+  border-radius: 6px;
+  margin: 20px;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+  position: left;;
+}
+
+.newPostUser{
+  size: 30px;
+  color: blue;
+  align-content: flex-start;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+
+}
+.hashtags {
+size: 20px;
+align-items: flex-end;
+}
 
 /*# sourceMappingURL=/indexcss.20c3dbba.css.map */

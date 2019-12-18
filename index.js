@@ -13,4 +13,5 @@ searchButton.addEventListener("click", (ev) => {
 
     var input = document.getElementById("newTag").value;
     instaController.searchByTag(input);
+
 });
